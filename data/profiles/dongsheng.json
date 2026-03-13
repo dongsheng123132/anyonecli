@@ -1,0 +1,25 @@
+{
+  "name": "dongsheng",
+  "display_name": "Dongsheng",
+  "bio": "AI Product Builder | OpenClaw contributor | 50+ projects shipped",
+  "skills": [
+    "ai_product_design",
+    "china_supply_chain",
+    "mcp_integration",
+    "prompt_engineering",
+    "hardware_prototyping"
+  ],
+  "commands": [
+    { "name": "consult_ai_product", "description": "AI 产品设计咨询" },
+    { "name": "find_factory", "description": "中国工厂对接" },
+    { "name": "review_prompt", "description": "Prompt 工程审查" },
+    { "name": "ship_mvp", "description": "MVP 快速交付" }
+  ],
+  "contact": {
+    "github": "dongsheng123132",
+    "x": "dongsheng_dev",
+    "email": "dongsheng@openclaw.dev"
+  },
+  "openclaw": true,
+  "created_at": "2026-03-13"
+}

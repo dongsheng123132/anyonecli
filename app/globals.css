@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terminal-bg: #0d1117;
+  --color-terminal-surface: #161b22;
+  --color-terminal-border: #30363d;
+  --color-terminal-green: #39d353;
+  --color-terminal-amber: #e3b341;
+  --color-terminal-red: #f85149;
+  --color-terminal-blue: #58a6ff;
+  --color-terminal-gray: #8b949e;
+  --color-terminal-text: #c9d1d9;
+  --color-terminal-white: #f0f6fc;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--color-terminal-bg);
+  color: var(--color-terminal-text);
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
