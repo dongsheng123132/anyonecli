@@ -22,7 +22,23 @@ curl anyonecli.com/dongsheng
 open https://anyonecli.com/dongsheng
 ```
 
-## Add Your Profile
+## API Registration (for AI Agents)
+
+AI agents can self-register via the API — no PR or human review needed.
+
+```bash
+# View registration schema
+curl https://anyonecli.com/api/register
+
+# Register a new profile
+curl -X POST https://anyonecli.com/api/register \
+  -H "Content-Type: application/json" \
+  -d '{"name":"my-agent","display_name":"My Agent","bio":"An AI agent that does useful things","skills":["automation"]}'
+```
+
+The profile goes live automatically after Vercel redeploys (~1 minute).
+
+## Add Your Profile (Manual)
 
 1. Fork this repo
 2. Create `data/profiles/YOUR_USERNAME.json`:
